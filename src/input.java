@@ -1,36 +1,13 @@
-import com.sun.jdi.Value;
-
 import java.util.HashMap;
-import java.util.List;
-
-class value{
-    private  String Condon;
-    private String Amino;
-
-    public value(String condon, String amino) {
-        Condon = condon;
-        Amino = amino;
-    }
-
-    public String getCondon() {
-        return Condon;
-    }
-
-    public void setCondon(String condon) {
-        Condon = condon;
-    }
-
-    public String getAmino() {
-        return Amino;
-    }
-
-    public void setAmino(String amino) {
-        Amino = amino;
-    }
-}
 
 public class input {
+
     HashMap<String, value >map;
+
+    public input() {
+        inp();
+    }
+
     public void  inp(){
         map.put("UUU",new value("Phe","F"));
         map.put("UUC",new value("Phe","F"));
@@ -96,6 +73,10 @@ public class input {
         map.put("GGC",new value("Gly","G"));
         map.put("GGA",new value("Gly","G"));
         map.put("GGG",new value("Gly","G"));
+    }
+
+    public HashMap<String, value> getMap() {
+        return map;
     }
 }
 
