@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class input {
 
-    HashMap<String, value >map;
+    HashMap<String, value >map = new HashMap<>();
 
     public input() {
         inp();
